@@ -15,13 +15,35 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 1280px;
   margin: auto;
 }
 
+.small-container {
+  width: 1060px;
+  margin: auto;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+}
+
+h3 {
+  color: red;
+  margin-bottom: 32px;
+}
+
 header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   background-color: #070d3c;
-  border: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
 }
 header .top_header {
   border-bottom: 1px solid #fff;
@@ -142,6 +164,20 @@ header .bottom_header .container nav ul li a {
   font-size: 16px;
   font-weight: 400;
 }
+header .bottom_header .index {
+  background-color: #fff;
+  border-bottom: 1px solid #cecece;
+}
+header .bottom_header .index .container {
+  height: 32px;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+header .bottom_header .index .container a {
+  text-decoration: none;
+  color: #000;
+}
 header .burger-menu {
   cursor: pointer;
   position: fixed;
@@ -258,4 +294,51 @@ header .menu nav li a {
 }
 header .display {
   display: block;
+}
+
+.hero {
+  margin-top: 136px;
+}
+.hero img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.hero .lyrics {
+  display: flex;
+}
+.hero .lyrics .titles {
+  width: 40%;
+}
+.hero .lyrics .titles > * {
+  max-width: 70%;
+}
+.hero .lyrics .pharagraf {
+  width: 60%;
+}
+.hero .lyrics .pharagraf p {
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.articles .article {
+  display: flex;
+}
+.articles .article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.articles .article .cover {
+  width: 50%;
+}
+.articles .article .cover img {
+  width: 100%;
+}
+.articles .article .lyrics {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articles .article .lyrics .content {
+  max-width: 60%;
 }

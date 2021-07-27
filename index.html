@@ -65,12 +65,53 @@
                   </ul>
                </nav>
             </div>
+            <div class="index">
+               <div class="container">
+                  <p><a href="#">Back</a> | Home > Chi siamo</p>
+               </div>
+            </div>
          </div>
       </header>
       <!-- //header -->
       <!-- main -->
       <main>
+         <!-- hero -->
+         <section class="hero">
+            <div class="small-container">
+               <img src="img/img1.jpg" alt="hero image">
+               <div class="lyrics">
+                  <div class="titles">
+                     <h3>Chi Siamo</h3>
+                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                  </div>
+                  <div class="pharagraf">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore hic, praesentium eligendi sint debitis vero impedit ratione asperiores qui molestias! Assumenda dignissimos blanditiis ex impedit pariatur labore placeat repudiandae accusamus. <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque dolor repellendus sunt molestiae dolore minus praesentium exercitationem perspiciatis, vero dicta quaerat repellat dolorem reprehenderit sed earum tenetur pariatur maiores.</p>
+                  </div>
+                  
+               </div>
+            </div>
+         </section>
+         <!-- //hero -->
+         <!-- articles -->
+         <section class="articles">
+            <div class="container">
+               <div v-for="article in articles" class="article">
+                  <div class="cover">
+                     <img :src="'img/img' + article.poster + '.jpg'" alt="article cover">
+                  </div>
+                  <div class="lyrics">
+                     <div class="content">
+                        <h3>{{article.tag}}</h3>
+                        <h2>{{article.title}}</h2>
+                        <p>{{article.lyric}}</p>
+                        <a href="#">Scopri di più</a>
+                     </div>   
+                  </div>
+               </div>
 
+            </div>
+         </section>
+         <!-- //articles -->
       </main>
       <!-- //main -->
       <!-- footer -->

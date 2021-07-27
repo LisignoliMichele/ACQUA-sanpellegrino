@@ -1,6 +1,12 @@
 header{
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
    background-color: $header_bg;
-   border: 1px solid #fff;
+   border-top: 1px solid #fff;
+   border-right: 1px solid #fff;
+   border-left: 1px solid #fff;
    .top_header{
       border-bottom: 1px solid #fff;
       .container{
@@ -103,6 +109,21 @@ header{
                }
             }
         }
+      }
+      .index{
+         background-color: #fff;
+         border-bottom: 1px solid #cecece;
+         .container{
+            height: $gutter;
+            color: #000;
+            display: flex;
+            align-items: center;
+            a{
+               text-decoration: none;
+               color: #000;
+            }
+         }
+         
       }
    }
    .burger-menu{
