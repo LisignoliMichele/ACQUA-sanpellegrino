@@ -298,6 +298,7 @@ header .display {
 
 .hero {
   margin-top: 136px;
+  margin-bottom: 80px;
 }
 .hero img {
   width: 100%;
@@ -322,6 +323,7 @@ header .display {
 
 .articles .article {
   display: flex;
+  margin-bottom: 50px;
 }
 .articles .article:nth-child(even) {
   flex-direction: row-reverse;
@@ -341,4 +343,13 @@ header .display {
 }
 .articles .article .lyrics .content {
   max-width: 60%;
+}
+.articles .article .lyrics p {
+  margin: 32px 0;
+}
+.articles .article .lyrics a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.17em;
+  font-weight: bold;
 }

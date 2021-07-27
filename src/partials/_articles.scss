@@ -4,6 +4,7 @@
       &:nth-child(even){
          flex-direction: row-reverse;
       }
+      margin-bottom: 50px;
       .cover{
          width: 50%;
          img{
@@ -18,6 +19,15 @@
          justify-content: center;
          .content{
             max-width: 60%;
+         }
+         p{
+            margin: $gutter 0;
+         }
+         a{
+            text-decoration: none;
+            color: red;
+            font-size: 1.17em;
+            font-weight: bold;
          }
       }
    }
