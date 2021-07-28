@@ -1,0 +1,39 @@
+.brands{
+   background-color: $header_bg;
+   color: #fff;
+   .small-container{
+      display: flex;
+      padding-top: $gutter;
+      padding-bottom: 150px;
+      .titles{
+         width: 30%;
+         h3{
+            color: #fff;
+         }
+         h2{
+            max-width: 90%;
+         }
+      }
+      .lyrics{
+         width: 70%;
+         p{
+            line-height: 25px;
+            margin-bottom: $gutter;
+         }
+         a{
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            &::after{
+               content: "";
+               width: 110%;
+               position: absolute;
+               height: 1px;
+               bottom: -5px;
+               background-color: #fff;
+               left: -5%;
+            }
+         }
+      }
+   }
+}

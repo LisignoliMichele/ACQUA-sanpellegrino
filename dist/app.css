@@ -16,11 +16,13 @@ body {
 
 .container {
   width: 1280px;
+  max-width: 95%;
   margin: auto;
 }
 
 .small-container {
   width: 1060px;
+  max-width: 85%;
   margin: auto;
 }
 
@@ -31,7 +33,9 @@ h2 {
 }
 
 h3 {
-  color: red;
+  color: #ed1a2e;
+  font-size: 12px;
+  font-weight: bold;
   margin-bottom: 32px;
 }
 
@@ -349,7 +353,47 @@ header .display {
 }
 .articles .article .lyrics a {
   text-decoration: none;
-  color: red;
-  font-size: 1.17em;
+  color: #ed1a2e;
+  font-size: 12px;
   font-weight: bold;
+}
+
+.brands {
+  background-color: #070d3c;
+  color: #fff;
+}
+.brands .small-container {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 150px;
+}
+.brands .small-container .titles {
+  width: 30%;
+}
+.brands .small-container .titles h3 {
+  color: #fff;
+}
+.brands .small-container .titles h2 {
+  max-width: 90%;
+}
+.brands .small-container .lyrics {
+  width: 70%;
+}
+.brands .small-container .lyrics p {
+  line-height: 25px;
+  margin-bottom: 32px;
+}
+.brands .small-container .lyrics a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.brands .small-container .lyrics a::after {
+  content: "";
+  width: 110%;
+  position: absolute;
+  height: 1px;
+  bottom: -5px;
+  background-color: #fff;
+  left: -5%;
 }

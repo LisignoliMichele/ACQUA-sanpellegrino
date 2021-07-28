@@ -14,10 +14,12 @@ body{
 }
 .container{
    width: 1280px;
+   max-width: 95%;
    margin: auto;
 }
 .small-container{
    width: 1060px;
+   max-width: 85%;
    margin: auto;
 }
 
@@ -29,6 +31,8 @@ h2{
 }
 
 h3{
-   color: red;
+   color: #ed1a2e;
+   font-size: 12px;
+   font-weight: bold;
    margin-bottom: $gutter;
 }
