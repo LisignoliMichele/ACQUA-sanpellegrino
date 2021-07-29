@@ -297,6 +297,112 @@ header .menu nav li a {
   text-decoration: none;
   color: #fff;
 }
+header a {
+  position: relative;
+}
+header a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  right: 0;
+  top: 25px;
+  width: 100%;
+  background-color: #ed1a2e;
+  transition: all 0.5s;
+  opacity: 0;
+}
+header a:hover::before {
+  opacity: 1;
+}
+header a::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  background: white;
+  top: 25px;
+  width: 5px;
+  height: 2px;
+  opacity: 0;
+}
+header a:hover::after {
+  -webkit-animation-name: hoverNav;
+          animation-name: hoverNav;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes hoverNav {
+  0% {
+    left: 1%;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  25% {
+    left: 100%;
+  }
+  26% {
+    left: 1%;
+  }
+  50% {
+    left: 100%;
+  }
+  51% {
+    left: 1%;
+  }
+  75% {
+    left: 100%;
+  }
+  76% {
+    left: 1%;
+  }
+  99% {
+    left: 100%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 1%;
+  }
+}
+@keyframes hoverNav {
+  0% {
+    left: 1%;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  25% {
+    left: 100%;
+  }
+  26% {
+    left: 1%;
+  }
+  50% {
+    left: 100%;
+  }
+  51% {
+    left: 1%;
+  }
+  75% {
+    left: 100%;
+  }
+  76% {
+    left: 1%;
+  }
+  99% {
+    left: 100%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 1%;
+  }
+}
 header .display {
   display: block;
 }
