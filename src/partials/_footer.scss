@@ -12,6 +12,7 @@ footer{
          max-width:15%;
          margin-right: 30px;
          @media screen and(max-width: 768px) {
+            margin-right: 0;
             max-width:30%;
             margin-bottom: $gutter;
          }
@@ -53,6 +54,19 @@ footer{
                }
             }
          }
+      }
+   }
+}
+.greetings{
+   background-color: $header_bg;
+   width: 100%;
+   text-align: center;
+   padding: 5px 0;
+   small{
+      max-width: 70%;
+      color: #fff;
+      span{
+         color: $primary;
       }
    }
 }

@@ -47,49 +47,49 @@ var app = new Vue(
                name: "Acqua_Panna",
                bottle: "panna_bt",
                title: "Acqua Panna",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
             {
                name: "Bibite_s.Pellegrino",
                bottle: "aranciata",
                title: "Bibite S.Pellegrino",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
             {
                name: "levissima_poster",
                bottle: "levissima",
                title: "Levissima",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
             {
                name: "Pago",
                bottle: "Pago_bt",
                title: "Pago",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
             {
                name: "perrier",
                bottle: "perrier_bt",
                title: "Perrier",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
             {
                name: "recoaro",
                bottle: "brilla_bt",
                title: "Recoaro",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
             {
                name: "S.Pellegrino",
                bottle: "s.pellegrino_bt",
                title: "S.Pellegrino",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
             {
                name: "Sanbitter",
                bottle: "sbitter",
                title: "Sanbitter",
-               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur dignissimos commodi"
+               lyric: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
             },
          ]
       },

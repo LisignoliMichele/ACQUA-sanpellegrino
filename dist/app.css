@@ -454,7 +454,7 @@ header .display {
 }
 @media screen and (max-width: 1200px) {
   .brands .small-container .lyrics {
-    width: 1000%;
+    width: 100%;
   }
 }
 .brands .small-container .lyrics p {
@@ -497,41 +497,42 @@ header .display {
 }
 @media screen and (max-width: 1200px) {
   .brands .carousel {
-    width: 80%;
+    width: 90%;
   }
 }
 .brands .carousel .carousel-cell {
   width: calc(100% / 3);
   margin-right: 2%;
-  min-height: 200px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 1200px) {
   .brands .carousel .carousel-cell {
     width: 50%;
   }
 }
-@media screen and (max-width: 768px) {
-  .brands .carousel .carousel-cell {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .brands .carousel .carousel-cell {
     width: 100%;
   }
 }
 .brands .carousel .carousel-cell .content {
-  min-height: 156px;
   width: 100%;
-  min-height: 29;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   position: relative;
   background-color: #fff;
   overflow: hidden;
   position: relative;
 }
+.brands .carousel .carousel-cell .content .spacekeeper {
+  width: 100%;
+  visibility: hidden;
+}
+.brands .carousel .carousel-cell .content .spacekeeper img {
+  width: 100%;
+}
 .brands .carousel .carousel-cell .content .box {
   width: 200%;
+  height: 100%;
   display: flex;
   position: absolute;
   top: 0;
@@ -548,25 +549,25 @@ header .display {
   width: 100%;
 }
 .brands .carousel .carousel-cell .content .box .info {
-  color: #000;
-  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .brands .carousel .carousel-cell .content .box .info .bottle {
-  width: 30%;
+  height: 100%;
 }
 .brands .carousel .carousel-cell .content .box .info .bottle img {
-  width: 100%;
+  height: 100%;
 }
 .brands .carousel .carousel-cell .content .box .info p {
   margin: 10px 0;
 }
 .brands .carousel .carousel-cell .content .box .info .text {
   padding: 20px;
-  width: 70%;
+  color: #000;
+  text-align: center;
 }
 .brands .carousel .carousel-cell .content .box .info .text img {
   max-width: 50%;
@@ -668,6 +669,7 @@ footer .content .logo {
 }
 @media screen and (max-width: 768px) {
   footer .content .logo {
+    margin-right: 0;
     max-width: 30%;
     margin-bottom: 32px;
   }
@@ -717,4 +719,18 @@ footer .content .footer_nav ul li a {
   footer .content .footer_nav ul li a {
     font-size: 6px;
   }
+}
+
+.greetings {
+  background-color: #070d3c;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+.greetings small {
+  max-width: 70%;
+  color: #fff;
+}
+.greetings small span {
+  color: #ed1a2e;
 }
