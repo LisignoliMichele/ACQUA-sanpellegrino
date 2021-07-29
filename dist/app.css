@@ -360,12 +360,16 @@ header .display {
 
 .brands {
   background-color: #070d3c;
+  background-image: url("../img/pattern.png");
+  background-size: cover;
   color: #fff;
+  margin-bottom: 150px;
+  position: relative;
 }
 .brands .small-container {
   display: flex;
   padding-top: 32px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 .brands .small-container .titles {
   width: 30%;
@@ -396,4 +400,142 @@ header .display {
   bottom: -5px;
   background-color: #fff;
   left: -5%;
+}
+.brands .carousel {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 50%;
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .brands .carousel {
+    width: 80%;
+  }
+}
+.brands .carousel .flickity-viewport {
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .brands .carousel {
+    width: 80%;
+  }
+}
+.brands .carousel .carousel-cell {
+  width: calc(100% / 3);
+  margin-right: 2%;
+  min-height: 200px;
+}
+@media screen and (max-width: 1200px) {
+  .brands .carousel .carousel-cell {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .brands .carousel .carousel-cell {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .brands .carousel .carousel-cell {
+    width: 100%;
+  }
+}
+.brands .carousel .carousel-cell .content {
+  min-height: 156px;
+  width: 100%;
+  min-height: 29;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.brands .carousel .carousel-cell .content .box {
+  width: 200%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+.brands .carousel .carousel-cell .content .box:hover {
+  left: -100%;
+}
+.brands .carousel .carousel-cell .content .box .poster {
+  width: 100%;
+}
+.brands .carousel .carousel-cell .content .box .poster img {
+  width: 100%;
+}
+.brands .carousel .carousel-cell .content .box .info {
+  color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.brands .carousel .carousel-cell .content .box .info .bottle {
+  width: 30%;
+}
+.brands .carousel .carousel-cell .content .box .info .bottle img {
+  width: 100%;
+}
+.brands .carousel .carousel-cell .content .box .info p {
+  margin: 10px 0;
+}
+.brands .carousel .carousel-cell .content .box .info .text {
+  padding: 20px;
+  width: 70%;
+}
+.brands .carousel .carousel-cell .content .box .info .text img {
+  max-width: 50%;
+}
+.brands .carousel .carousel-cell:before {
+  display: none;
+}
+.brands .carousel .flickity-button {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  top: 35%;
+  background-color: transparent;
+  border: transparent;
+}
+.brands .carousel .flickity-button svg {
+  fill: #cecece;
+  transition: all 0.5s;
+}
+.brands .carousel .flickity-button svg:hover {
+  fill: #ed1a2e;
+}
+.brands .carousel .flickity-button.next {
+  right: 0;
+}
+.brands .carousel .flickity-page-dots {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands .carousel .flickity-page-dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #bbbbbb;
+  margin-right: 15px;
+}
+.brands .carousel .flickity-page-dots .dot::marker {
+  color: transparent;
+}
+.brands .carousel .flickity-page-dots .dot.is-selected {
+  width: 13px;
+  height: 13px;
+  background-color: #000;
 }

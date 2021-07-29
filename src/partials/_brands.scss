@@ -1,10 +1,14 @@
 .brands{
    background-color: $header_bg;
+   background-image: url("../img/pattern.png");
+   background-size: cover;
    color: #fff;
+   margin-bottom: 150px;
+   position: relative;
    .small-container{
       display: flex;
       padding-top: $gutter;
-      padding-bottom: 150px;
+      padding-bottom: 200px;
       .titles{
          width: 30%;
          h3{
@@ -32,6 +36,137 @@
                bottom: -5px;
                background-color: #fff;
                left: -5%;
+            }
+         }
+      }
+   }
+   .carousel {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 100%;
+      left: 50%;
+      width: 1000px;
+      margin: auto;
+      overflow: hidden;
+      justify-content: space-between;
+      @media screen and (max-width: 1200px){
+         width: 80%;
+      }
+      .flickity-viewport{
+         width: 85%;
+         margin: auto;
+         overflow: hidden;
+      }
+      @media screen and (max-width: 1200px){
+         width: 80%;
+      }
+      .carousel-cell {
+         width: calc(100% / 3);
+         margin-right: 2%;
+         min-height: 200px;
+         @media screen and (max-width: 1200px){
+            width: 50%;
+         }
+         @media screen and (max-width: 768px){
+            width: 70%;
+         }
+         @media screen and (max-width: 480px){
+            width: 100%;
+         }
+         .content{
+            min-height: 156px;
+            width: 100%;
+            min-height: 29;
+            box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.5);
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
+            position: relative;
+            .box{
+               width: 200%;
+               display: flex;
+               position: absolute;
+               top: 0;
+               left: 0;
+               transition: all 1s;
+               &:hover{
+                  left: -100%
+               }
+               .poster{
+                  width: 100%;
+                  img{
+                     width: 100%;
+                  }
+               }
+               .info{
+                  color: #000;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  .bottle{
+                     width: 30%;
+                     img{
+                        width: 100%;
+                     }
+                  }
+                  p{
+                     margin: 10px 0;
+                  }
+
+                  .text{
+                     padding: 20px;
+                     width: 70%;
+                     img{
+                        max-width: 50%;
+                     }
+                  }
+               }
+            }
+         }
+        
+         &:before {
+            display: none;
+         }
+      }
+      .flickity-button{
+         cursor: pointer;
+         position: absolute;
+         width: 25px;
+         top: 35%;
+         background-color: transparent;
+         border: transparent;
+         svg{
+            fill: #cecece;
+            transition: all 0.5s;
+            &:hover{
+               fill: #ed1a2e;;
+            }
+         }
+         &.next{
+            right: 0;
+         }
+      }
+      .flickity-page-dots{
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         .dot{
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #bbbbbb;
+            margin-right: 15px;
+            
+            &::marker{
+               color: transparent;
+            }
+            &.is-selected{
+               width: 13px;
+               height: 13px;
+               background-color: #000;
             }
          }
       }
