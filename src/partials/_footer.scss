@@ -3,28 +3,53 @@ footer{
    background-color: $header_bg;
    .content{
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
+      @media screen and(max-width: 768px) {
+         justify-content: center;
+      }
       .logo{
          max-width:15%;
          margin-right: 30px;
+         @media screen and(max-width: 768px) {
+            max-width:30%;
+            margin-bottom: $gutter;
+         }
          img{
             width: 100%;
          }
       }
       .footer_nav{
+         @media screen and(max-width: 768px) {
+            width: 100%;
+            text-align: center;
+         }
          ul{
             display: flex;
+            justify-content: center;
             li{
                margin-right: 10px;
                list-style: none;
+               @media screen and(max-width: 768px) {
+                  margin-right: 5px;
+               }
                &:not(:last-of-type)::after{
                   content: "|";
                   color: #fff;
                   margin-left: 10px;
+                  @media screen and(max-width: 768px) {
+                     margin-left: 5px;
+                  }
                }
                a{
                   text-decoration: none;
                   color: #fff;
+                  @media screen and(max-width: 768px) {
+                     font-size: 9px;
+                  }
+                  @media screen and(max-width: 768px) {
+                     font-size: 6px;
+                  }
                }
             }
          }

@@ -7,14 +7,30 @@
    }
    .lyrics{
       display: flex;
+      flex-wrap: wrap;
+      @media screen and (max-width:1200px) {
+         text-align: center;
+       }
      .titles{
         width: 40%;
+        @media screen and (max-width:1200px) {
+          width: 100%;
+          h1{
+             margin-bottom: $gutter;
+          }
+        }
         & > *{
            max-width: 70%;
+           @media screen and (max-width:1200px) {
+             max-width: 100%;
+           }
         }
      }
      .pharagraf{
       width: 60%;
+      @media screen and (max-width:1200px) {
+         width: 100%;
+       }
       p{
          line-height: 25px;
          font-weight: 400;

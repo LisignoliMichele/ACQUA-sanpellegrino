@@ -311,30 +311,69 @@ header .display {
 }
 .hero .lyrics {
   display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1200px) {
+  .hero .lyrics {
+    text-align: center;
+  }
 }
 .hero .lyrics .titles {
   width: 40%;
 }
+@media screen and (max-width: 1200px) {
+  .hero .lyrics .titles {
+    width: 100%;
+  }
+  .hero .lyrics .titles h1 {
+    margin-bottom: 32px;
+  }
+}
 .hero .lyrics .titles > * {
   max-width: 70%;
 }
+@media screen and (max-width: 1200px) {
+  .hero .lyrics .titles > * {
+    max-width: 100%;
+  }
+}
 .hero .lyrics .pharagraf {
   width: 60%;
+}
+@media screen and (max-width: 1200px) {
+  .hero .lyrics .pharagraf {
+    width: 100%;
+  }
 }
 .hero .lyrics .pharagraf p {
   line-height: 25px;
   font-weight: 400;
 }
 
+.articles .container {
+  max-width: 85%;
+}
 .articles .article {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 .articles .article:nth-child(even) {
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 1200px) {
+  .articles .article {
+    margin-bottom: 80px;
+  }
+}
 .articles .article .cover {
   width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  .articles .article .cover {
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }
 .articles .article .cover img {
   width: 100%;
@@ -346,8 +385,18 @@ header .display {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .articles .article .lyrics {
+    width: 100%;
+  }
+}
 .articles .article .lyrics .content {
   max-width: 60%;
+}
+@media screen and (max-width: 1200px) {
+  .articles .article .lyrics .content {
+    max-width: 90%;
+  }
 }
 .articles .article .lyrics p {
   margin: 32px 0;
@@ -369,11 +418,25 @@ header .display {
 }
 .brands .small-container {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 32px;
   padding-bottom: 200px;
 }
+@media screen and (max-width: 1200px) {
+  .brands .small-container {
+    text-align: center;
+  }
+}
 .brands .small-container .titles {
   width: 30%;
+}
+@media screen and (max-width: 1200px) {
+  .brands .small-container .titles {
+    width: 100%;
+  }
+  .brands .small-container .titles h2 {
+    margin-bottom: 32px;
+  }
 }
 .brands .small-container .titles h3 {
   color: #fff;
@@ -381,8 +444,18 @@ header .display {
 .brands .small-container .titles h2 {
   max-width: 90%;
 }
+@media screen and (max-width: 1200px) {
+  .brands .small-container .titles h2 {
+    max-width: 100%;
+  }
+}
 .brands .small-container .lyrics {
   width: 70%;
+}
+@media screen and (max-width: 1200px) {
+  .brands .small-container .lyrics {
+    width: 1000%;
+  }
 }
 .brands .small-container .lyrics p {
   line-height: 25px;
@@ -542,7 +615,7 @@ header .display {
 }
 
 .values {
-  padding: 100px;
+  padding: 80px 0;
   background-image: url("../img/pattern.png");
   background-size: cover;
   text-align: center;
@@ -550,6 +623,11 @@ header .display {
 .values .content {
   max-width: 60%;
   margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .values .content {
+    max-width: 100%;
+  }
 }
 .values .content h2 {
   color: #070d3c;
@@ -576,28 +654,67 @@ footer {
 }
 footer .content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  footer .content {
+    justify-content: center;
+  }
 }
 footer .content .logo {
   max-width: 15%;
   margin-right: 30px;
 }
+@media screen and (max-width: 768px) {
+  footer .content .logo {
+    max-width: 30%;
+    margin-bottom: 32px;
+  }
+}
 footer .content .logo img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  footer .content .footer_nav {
+    width: 100%;
+    text-align: center;
+  }
+}
 footer .content .footer_nav ul {
   display: flex;
+  justify-content: center;
 }
 footer .content .footer_nav ul li {
   margin-right: 10px;
   list-style: none;
+}
+@media screen and (max-width: 768px) {
+  footer .content .footer_nav ul li {
+    margin-right: 5px;
+  }
 }
 footer .content .footer_nav ul li:not(:last-of-type)::after {
   content: "|";
   color: #fff;
   margin-left: 10px;
 }
+@media screen and (max-width: 768px) {
+  footer .content .footer_nav ul li:not(:last-of-type)::after {
+    margin-left: 5px;
+  }
+}
 footer .content .footer_nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  footer .content .footer_nav ul li a {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .content .footer_nav ul li a {
+    font-size: 6px;
+  }
 }
