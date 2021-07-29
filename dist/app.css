@@ -44,6 +44,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 100;
   background-color: #070d3c;
   border-top: 1px solid #fff;
   border-right: 1px solid #fff;
@@ -538,4 +539,65 @@ header .display {
   width: 13px;
   height: 13px;
   background-color: #000;
+}
+
+.values {
+  padding: 100px;
+  background-image: url("../img/pattern.png");
+  background-size: cover;
+  text-align: center;
+}
+.values .content {
+  max-width: 60%;
+  margin: auto;
+}
+.values .content h2 {
+  color: #070d3c;
+  margin-bottom: 32px;
+}
+.values .content a {
+  color: #070d3c;
+  font-weight: 400;
+  position: relative;
+}
+.values .content a::after {
+  content: "";
+  width: 110%;
+  position: absolute;
+  height: 1px;
+  bottom: -5px;
+  background-color: #070d3c;
+  left: -5%;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #070d3c;
+}
+footer .content {
+  display: flex;
+  align-items: center;
+}
+footer .content .logo {
+  max-width: 15%;
+  margin-right: 30px;
+}
+footer .content .logo img {
+  width: 100%;
+}
+footer .content .footer_nav ul {
+  display: flex;
+}
+footer .content .footer_nav ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+footer .content .footer_nav ul li:not(:last-of-type)::after {
+  content: "|";
+  color: #fff;
+  margin-left: 10px;
+}
+footer .content .footer_nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }

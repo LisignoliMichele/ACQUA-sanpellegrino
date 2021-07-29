@@ -1,0 +1,28 @@
+.values{
+   padding: 100px;
+   background-image: url("../img/pattern.png");
+   background-size: cover;
+   text-align: center;
+   .content{
+      max-width: 60%;
+      margin: auto;
+      h2{
+         color: $header_bg;
+         margin-bottom: $gutter;
+      }
+      a{
+         color: $header_bg;
+         font-weight: 400;
+         position: relative;
+         &::after{
+            content: "";
+            width: 110%;
+            position: absolute;
+            height: 1px;
+            bottom: -5px;
+            background-color: $header_bg;
+            left: -5%;
+         }
+      }
+   }
+}

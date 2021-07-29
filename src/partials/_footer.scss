@@ -1,0 +1,33 @@
+footer{
+   padding: 50px 0;
+   background-color: $header_bg;
+   .content{
+      display: flex;
+      align-items: center;
+      .logo{
+         max-width:15%;
+         margin-right: 30px;
+         img{
+            width: 100%;
+         }
+      }
+      .footer_nav{
+         ul{
+            display: flex;
+            li{
+               margin-right: 10px;
+               list-style: none;
+               &:not(:last-of-type)::after{
+                  content: "|";
+                  color: #fff;
+                  margin-left: 10px;
+               }
+               a{
+                  text-decoration: none;
+                  color: #fff;
+               }
+            }
+         }
+      }
+   }
+}
